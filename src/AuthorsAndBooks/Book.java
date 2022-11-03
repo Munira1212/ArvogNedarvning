@@ -7,14 +7,17 @@ public class Book extends Author {
     private int numPages;
     private Author author;
 
-   public Book(Author author, String titel, int numPages, ArrayList<Book>list) {
-      super();
+
+   public Book(Author author, String titel, int numPages) {
        this.author = author;
        this.titel = titel;
        this.numPages = numPages;
         }
 
+
+
        public Author getAuthor() {
+
            return author;
        }
 

@@ -8,7 +8,7 @@ public class Author {
     private char gender;
    // private Book[] books;
 
-    ArrayList<Book> books = new ArrayList<>();
+    ArrayList <Book> books = new ArrayList<>();
     public Author(String name, char gender, String email){
         this.books= books;
         this.name= name;
@@ -41,11 +41,16 @@ public class Author {
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", gender=" + gender +
-                ", books=" + books +
                 '}';
     }
 
-    public void addBook(Book book) {
-        books.add(book);
-    }
+  /* public Book addBook(Book book) {
+
+        books.add(0,book);
+      return bo
+    }*/
+
+
+
+
 }
