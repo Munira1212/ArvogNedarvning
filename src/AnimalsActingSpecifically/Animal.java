@@ -5,11 +5,11 @@ public abstract class Animal {
     private String navn;
     private String makeSound;
 
-    public Animal( String makeSound){
+    public Animal( String navn){
+        this.navn=navn;
 
-        this.makeSound= makeSound;
+
     }
-
 
     public String getNavn(){
         return navn;
@@ -21,14 +21,14 @@ public abstract class Animal {
 
     public String makeSound(){
 
-       return " Animal sound";
+       return " Animal sounds;";
     }
 
     @Override
     public String toString() {
         return "Animal{" +
                 "navn='" + navn + '\'' +
-                ", makeSound='" + makeSound + '\'' +
-                '}';
+                makeSound() + '\'' + " " +
+                '\'' ;
     }
 }

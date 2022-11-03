@@ -9,6 +9,7 @@ public class Book extends Author {
 
 
    public Book(Author author, String titel, int numPages) {
+
        this.author = author;
        this.titel = titel;
        this.numPages = numPages;

@@ -10,7 +10,6 @@ public class Author {
 
     ArrayList <Book> books = new ArrayList<>();
     public Author(String name, char gender, String email){
-        this.books= books;
         this.name= name;
         this.gender=gender;
         this.email=email;
