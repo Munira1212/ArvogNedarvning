@@ -13,20 +13,6 @@ public class KlasseVærelse extends SkoleLokaler {
 
     }
 
-   /* public void setStørrelsePåTavl(int størrelsePåTavl){
-        this.størrelsePåTavl=størrelsePåTavl;
-    }
-    public int getStørrelsePåTavl(){
-        return størrelsePåTavl;
-    }
-    public void setFarvePÅVæggen(String farvePÅVæggen){
-        this.farvePÅVæggen=farvePÅVæggen;
-    }
-    public String getFarvePÅVæggen(){
-       return farvePÅVæggen;
-    }
-   */
-
     @Override
     public String toString() {
         return "" + super.getAntalPerson() + " " + super.getRumNummer()+

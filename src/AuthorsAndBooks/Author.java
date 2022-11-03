@@ -6,17 +6,17 @@ public class Author {
     private String name;
     private String email;
     private char gender;
-    private Book[] books;
+   // private Book[] books;
 
-    ArrayList<String> arrybooks = new ArrayList<>();
-    public Author(String name, char gender, String email, Book[] book){
+    ArrayList<Book> books = new ArrayList<>();
+    public Author(String name, char gender, String email){
         this.books= books;
         this.name= name;
         this.gender=gender;
         this.email=email;
     }
-    public Author(Book[] books){
-        this.books= books;
+    public Author(){
+
     }
 
     public String getName(){
@@ -34,11 +34,18 @@ public class Author {
         this.name=name;
     }
 
-    public void addBooks(Book book) {
-        //ArrayList<String> arryboks = new ArrayList<>();
 
-        arrybooks.add(String.valueOf(book));
+    @Override
+    public String toString() {
+        return "Author{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", gender=" + gender +
+                ", books=" + books +
+                '}';
     }
 
-
+    public void addBook(Book book) {
+        books.add(book);
+    }
 }
