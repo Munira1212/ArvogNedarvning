@@ -22,7 +22,7 @@ public class AnimalsActingSpecifically {
             Animal a = animals.get(i);
           System.out.println(a);
 //kan også gøre animals.get(i) & sæt den som et a
-          if (animals.get(i) instanceof Dog)
+          if (a instanceof Dog)
             ((Dog) animals.get(i)).Beg();
 
           else if ( animals.get(i) instanceof Cat)
