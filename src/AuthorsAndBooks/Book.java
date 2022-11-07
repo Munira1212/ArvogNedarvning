@@ -14,9 +14,6 @@ public class Book extends Author {
        this.titel = titel;
        this.numPages = numPages;
         }
-
-
-
        public Author getAuthor() {
 
            return author;
